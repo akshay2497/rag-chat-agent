@@ -50,7 +50,7 @@ To adapt this chatbot for any other product documentation:
    Install all dependencies listed in `requirements.txt` and configure all necessary directory paths.
 
 3. **Set Up Gemini API key**  
-   Create your Gemini API key in [https://aistudio.google.com/welcome](googleAIstudio)
+   Create your Gemini API key in [google AI studio](https://aistudio.google.com/welcome)
 
 4. **Start Redis Server**  
    Install and start the Redis server on your machine. It's required for managing user sessions.
