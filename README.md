@@ -1,4 +1,4 @@
-# React Docs Chatbot - Context-Aware Support Assistant
+# 🚀 React/MDN Docs Chatbot - Context-Aware Support Assistant 🚀
 
 This project is a context-aware chatbot built using FastAPI, ChromaDB, Sentence Transformers, and the Gemini LLM API. It is designed to help users get precise and relevant answers from documentation-based sources like React.js or JavaScript.
 
@@ -43,9 +43,33 @@ The chatbot uses Retrieval-Augmented Generation (RAG) to retrieve relevant infor
 
 To adapt this chatbot for any other product documentation:
 
-1. Update the `base_url` in the `main()` function to point to the new documentation site.
-2. Run the script to scrape and ingest the new documentation into ChromaDB.
-3. Start the FastAPI server and begin asking questions.
+1. **Clone the Project**  
+   Clone the repository and open it in PyCharm or any IDE you choose.
+
+2. **Install Dependencies**  
+   Install all dependencies listed in `requirements.txt` and configure all necessary directory paths.
+
+3. **Set Up Gemini API key**  
+   Create your Gemini API key in [google AI studio](https://aistudio.google.com/welcome)
+
+4. **Start Redis Server**  
+   Install and start the Redis server on your machine. It's required for managing user sessions.
+
+5. **Configure the Scraper**  
+   In `crawl_pages.py`, update the base URL of your product documentation.  
+   You may also need to modify `scraper.py` depending on how anchor tags are defined in your site's HTML.
+
+6. **Run the Crawler**  
+   Execute `crawl_pages.py` from the terminal. It will scrape the documentation, convert it to embeddings, and store it in ChromaDB.
+
+7. **Start the API Server**  
+   Navigate to the `app` directory and run the following command:  
+   ```
+   uvicorn main:app --reload
+   ```
+
+8. **Test the API**  
+   Once the app is running, use the included Postman collection (available in this repo) to test your chatbot's endpoints.
 
 ---
 
