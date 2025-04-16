@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "7cc9f55a-5a0a-4b57-bc8b-da0b1e0d9d58",
+		"name": "rag-agent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14202991"
+	},
+	"item": [
+		{
+			"name": "ask",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"question\": \"what is Conversations product of stayflexi?\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/ask",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "chat",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"question\": \"how to use useMemo hook in react?\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat/f45afc7f-ac65-4f32-ae2a-9b35d13d1eca",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat",
+						"f45afc7f-ac65-4f32-ae2a-9b35d13d1eca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "start session",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"question\": \"how to set up competitor in rateshopper?\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/start",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "exit session",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"question\": \"how to set up competitor in rateshopper?\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/exit/af9cdf0d-052a-4ff8-b21c-8be8e3fb3b6a",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"exit",
+						"af9cdf0d-052a-4ff8-b21c-8be8e3fb3b6a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
