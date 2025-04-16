@@ -1,4 +1,4 @@
-# React Docs Chatbot - Context-Aware Support Assistant
+# 🚀 React/MDN Docs Chatbot - Context-Aware Support Assistant 🚀
 
 This project is a context-aware chatbot built using FastAPI, ChromaDB, Sentence Transformers, and the Gemini LLM API. It is designed to help users get precise and relevant answers from documentation-based sources like React.js or JavaScript.
 
